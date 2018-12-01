@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="common_bg_focus">#0084ff</color>
+    <color name="settings_bg_color">#e5000000</color>
+
+    <!-- common -->
+    <color name="transparent">#00000000</color>
+    <color name="common_text_color">#ffffff</color>
+    <color name="common_text_color_15">#26ffffff</color>
+    <color name="common_text_color_20">#33ffffff</color>
+    <color name="common_text_color_30">#4dffffff</color>
+    <color name="common_text_color_40">#66ffffff</color>
+    <color name="common_text_color_50">#80ffffff</color>
+    <color name="common_text_color_60">#99ffffff</color>
+    <color name="common_text_color_focus">#ffffff</color>
+    <color name="common_text_color_selected">#2f353e</color>
+    <color name="common_text_color_graty">#808008</color>
+</resources>

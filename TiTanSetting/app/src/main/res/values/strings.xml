@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TiTanSetting</string>
+    <string name="main_general">通用</string>
+    <string name="main_picture">图像</string>
+    <string name="main_sound">声音</string>
+    <string name="main_network">连接</string>
+    <string name="main_security">安全</string>
+    <string name="main_system">系统</string>
+</resources>
