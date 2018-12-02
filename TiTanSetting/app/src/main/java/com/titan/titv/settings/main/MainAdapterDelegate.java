@@ -1,10 +1,14 @@
 package com.titan.titv.settings.main;
 
+import android.animation.Animator;
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.OvershootInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -53,6 +57,13 @@ public class MainAdapterDelegate extends AbsListItemAdapterDelegate<MainModel, B
                 if (hasFocus) {
                     viewHolder.itemView.setBackgroundResource(R.drawable.common_bg_focus);
                     viewHolder.icon.setImageResource(item.getIconResSelected());
+                    ObjectAnimator localObjectAnimator1 = ObjectAnimator.ofFloat(viewHolder.itemView, "ScaleX", new float[]{0.86f, 1.0f}).setDuration(300);
+                    ObjectAnimator localObjectAnimator2 = ObjectAnimator.ofFloat(viewHolder.itemView, "ScaleY", new float[]{0.86f, 1.0f}).setDuration(300);
+                    localObjectAnimator1.setInterpolator(new OvershootInterpolator());
+                    localObjectAnimator2.setInterpolator(new OvershootInterpolator());
+                    AnimatorSet mFocusAnimator = new AnimatorSet();
+                    mFocusAnimator.playTogether(new Animator[]{localObjectAnimator1, localObjectAnimator2});
+                    mFocusAnimator.start();
 
                 } else {
                     viewHolder.itemView.setBackgroundResource(0);
