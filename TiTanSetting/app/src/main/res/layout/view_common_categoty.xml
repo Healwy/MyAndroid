@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<include layout="@layout/background" />-->
+
+    <include layout="@layout/view_title" />
+
+    <com.titan.titv.settings.widgets.TvSelector
+        android:id="@+id/selector"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <com.titan.titv.settings.widgets.TvScrollViewEx
+        android:id="@+id/scrollView1"
+        android:layout_width="@dimen/list_scrollview_general_width"
+        android:layout_height="@dimen/list_scrollView_height"
+        android:layout_marginLeft="@dimen/list_scrollview_marginLeft"
+        android:layout_marginTop="130dp"
+        android:clipChildren="false"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="50dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:overScrollMode="never"
+        android:requiresFadingEdge="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/scrollContentHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:orientation="vertical" />
+    </com.titan.titv.settings.widgets.TvScrollViewEx>
+
+</RelativeLayout>

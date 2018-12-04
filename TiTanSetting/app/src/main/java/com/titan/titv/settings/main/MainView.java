@@ -12,6 +12,7 @@ import com.titan.titv.settings.base.BaseModel;
 import com.titan.titv.settings.base.BaseView;
 import com.titan.titv.settings.base.OnSettingItemClickListener;
 import com.titan.titv.settings.base.TVGirdLayoutManager;
+import com.titan.titv.settings.general.GeneralView;
 import com.titan.titv.settings.model.MainModel;
 import com.titan.titv.settings.model.SettingType;
 
@@ -99,7 +100,7 @@ public class MainView extends BaseView implements OnSettingItemClickListener {
 //                  startView(new PersonalView(mApp));
                 break;
             case GENERAL:
-//                 startView(new GeneralView(mApp));
+                 startView(new GeneralView(mApp));
                 break;
             case PICTURE:
 //                startView(new PictureView(mApp));

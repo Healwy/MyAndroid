@@ -13,5 +13,10 @@
     <dimen name="main_setting_text_marginTop">16.0dp</dimen>
     <dimen name="main_setting_text_size_normal">18.0dp</dimen>
     <dimen name="common_corner">1.0dp</dimen>
+    <dimen name="title_marginTop">72dp</dimen>
+    <dimen name="title_big">24sp</dimen>
+    <dimen name="list_scrollview_general_width">615dp</dimen>
+    <dimen name="list_scrollView_height">354dp</dimen>
+    <dimen name="list_scrollview_marginLeft">166dp</dimen>
 
 </resources>
