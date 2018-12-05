@@ -18,5 +18,19 @@
     <dimen name="list_scrollview_general_width">615dp</dimen>
     <dimen name="list_scrollView_height">354dp</dimen>
     <dimen name="list_scrollview_marginLeft">166dp</dimen>
+    <dimen name="setting_item_height">57dp</dimen>
+    <dimen name="titv_setting_item_content_left_margin">26dp</dimen>
+    <dimen name="setting_item_width">600dp</dimen>
+    <dimen name="titv_category_title_text_size">18sp</dimen>
+    <dimen name="titv_setting_item_title_text_size">18sp</dimen>
+    <dimen name="titv_setting_item_summary_text_size">12sp</dimen>
+    <dimen name="titv_category_title_top_margin">25dp</dimen>
+    <dimen name="titv_category_title_bottom_margin">15dp</dimen>
+    <dimen name="titv_category_holder_bottom_margin">25dp</dimen>
+    <dimen name="titv_setting_item_summary_width">400dp</dimen>
+    <dimen name="titv_setting_category_top_margin">10dp</dimen>
+    <dimen name="titv_setting_item_iv_arrow_right_margin">16dp</dimen>
+    <dimen name="titv_setting_item_tv_value_right_margin">60dp</dimen>
+    <dimen name="titv_switcher_width">165dp</dimen>
 
 </resources>

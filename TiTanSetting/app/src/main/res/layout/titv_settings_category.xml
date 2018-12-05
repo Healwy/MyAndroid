@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.titan.titv.settings.widgets.SettingCategory xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/categoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="@dimen/titv_category_title_top_margin"
+        android:layout_marginBottom="@dimen/titv_category_title_bottom_margin"
+        android:textColor="#99ffffff"
+        android:textSize="@dimen/titv_category_title_text_size"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/categoryContentHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/categoryTitle"
+        android:gravity="center"
+        android:orientation="vertical" />
+</com.titan.titv.settings.widgets.SettingCategory>

@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="setting_item_style">
+        <item name="android:stateListAnimator">@anim/titv_settingitem_scale</item>
+    </style>
+
 </resources>

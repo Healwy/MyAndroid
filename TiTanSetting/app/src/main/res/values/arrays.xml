@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="setting_normal_list">
+        <item>关闭</item>
+        <item>开启</item>
+    </string-array>
+    <string-array name="general_screensaver_timeout_list" >
+        <item>关闭</item>
+        <item>1分钟</item>
+        <item>2分钟</item>
+        <item>4分钟</item>
+        <item>8分钟</item>
+        <item>12分钟</item>
+    </string-array>
+
+
+</resources>

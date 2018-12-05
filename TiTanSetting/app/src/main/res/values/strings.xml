@@ -6,4 +6,10 @@
     <string name="main_network">连接</string>
     <string name="main_security">安全</string>
     <string name="main_system">系统</string>
+
+    <!--general-->
+    <string name="general_language_zh">中文</string>
+    <string name="general_language_en">英文</string>
+    <string name="general_save_energy">节能</string>
+
 </resources>

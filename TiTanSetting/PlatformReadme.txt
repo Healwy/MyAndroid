@@ -14,3 +14,6 @@ mParams.type = WindowManager.LayoutParams.TYPE_PHONE;
             <!--<intent-filter android:priority="1000" >-->
             <!--</intent-filter>-->
         </service>
+
+4、targetSdkVersion targetSdkVersion 
+targetSdkVersion 22 改为  targetSdkVersion 28

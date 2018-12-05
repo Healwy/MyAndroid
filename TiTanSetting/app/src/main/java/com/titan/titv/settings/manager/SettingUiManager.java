@@ -40,7 +40,7 @@ public class SettingUiManager {
     private void initParams() {
         LogUtils.d("Function Start");
         mParams = new WindowManager.LayoutParams();
-            mParams.type = WindowManager.LayoutParams.TYPE_TOAST;
+            mParams.type = WindowManager.LayoutParams.TYPE_PHONE;
         mParams.flags = WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL;
         mParams.format = PixelFormat.TRANSLUCENT;
         mParams.width = RelativeLayout.LayoutParams.MATCH_PARENT;
