@@ -15,6 +15,7 @@ import com.titan.titv.settings.base.TVGirdLayoutManager;
 import com.titan.titv.settings.general.GeneralView;
 import com.titan.titv.settings.model.MainModel;
 import com.titan.titv.settings.model.SettingType;
+import com.titan.titv.settings.picture.PictureView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -58,7 +59,8 @@ public class MainView extends BaseView implements OnSettingItemClickListener {
         mData.add(new MainModel(mContext.getString(R.string.main_system), R.drawable.main_settings_system, R.drawable.main_settings_system_selected, SettingType.SYSTEM));
     }
 
-    private void initFocus() {
+    @Override
+    public void initFocus() {
         mHandler.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -103,7 +105,7 @@ public class MainView extends BaseView implements OnSettingItemClickListener {
                  startView(new GeneralView(mApp));
                 break;
             case PICTURE:
-//                startView(new PictureView(mApp));
+                startView(new PictureView(mApp));
                 break;
             case SOUND:
 //                 startView(new SoundView(mApp));

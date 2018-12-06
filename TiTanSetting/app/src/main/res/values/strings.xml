@@ -11,5 +11,7 @@
     <string name="general_language_zh">中文</string>
     <string name="general_language_en">英文</string>
     <string name="general_save_energy">节能</string>
+    <string name="general_language_setting">语言设置</string>
+    <string name="general_input">输入法</string>
 
 </resources>

@@ -1,6 +1,7 @@
 package com.titan.titv.settings.general;
 
 import android.app.Application;
+import android.util.Log;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodInfo;
 import android.view.inputmethod.InputMethodManager;
@@ -11,6 +12,7 @@ import com.titan.titv.settings.R;
 import com.titan.titv.settings.base.BaseView;
 import com.titan.titv.settings.widgets.SettingCategory;
 import com.titan.titv.settings.widgets.SettingItem;
+import com.titan.titv.settings.widgets.SwitcherItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,10 +27,14 @@ public class GeneralView extends BaseView {
     private ViewGroup mContentHolder;
     private SettingCategory mGeneralCategory;
     private SettingCategory mSaveEnergyCategory;
+    private SwitcherItem mLanguageItem;
+    private IGeneralContract.Presenter mPresenter;
+    private SwitcherItem mImeItem;
 
 
     public GeneralView(Application app) {
         super(app);
+        mPresenter = new GeneralPresenter(mContext);
     }
 
     @Override
@@ -42,6 +48,21 @@ public class GeneralView extends BaseView {
         this.mTitleFirst.setText(R.string.main_general);
         initData();
         loadView();
+        initFocus();
+        refreshView();
+    }
+
+    private void refreshView() {
+        if("zh".equals(mPresenter.getLauanges())){
+            this.mLanguageItem.setCurrentIndex(0);
+        }else{
+            this.mLanguageItem.setCurrentIndex(1);
+        }
+
+        String defIMEString = mPresenter.getDefaultIME();
+        int defIMEIndex = this.mIMElistId.indexOf(defIMEString);
+        this.mImeItem.setCurrentIndex(defIMEIndex);
+
     }
 
     private void loadView() {
@@ -66,7 +87,47 @@ public class GeneralView extends BaseView {
     }
 
     private SettingItem getItem(int index, ViewGroup group) {
+        switch (index) {
+            case TvItemList.TvGeneralItem.ITEM_LANGUAGE:
+                this.mLanguageItem = SwitcherItem.createItem(group);
+                this.mLanguageItem.setTitle(R.string.general_language_setting);
+                this.mLanguageItem.setOptions(this.mLanguageOption);
+                this.mLanguageItem.setOnSwitchListener(new SwitcherItem.OnSwitchListener() {
+                    @Override
+                    public boolean onSwitchTo(int i) {
+                        if(i == 0){
+                            mPresenter.setLauanges("zh");
+                        }else  {
+                            mPresenter.setLauanges("en");
+                        }
+                        postChangeLanguage();
+                        return true;
+                    }
+                });
+                break;
+            case TvItemList.TvGeneralItem.ITEM_IME:
+                this.mImeItem = SwitcherItem.createItem(group);
+                this.mImeItem.setTitle(R.string.general_input);
+                this.mImeItem.setOptions(this.mIMEOptioin);
+                this.mImeItem.setOnSwitchListener(new SwitcherItem.OnSwitchListener() {
+                    @Override
+                    public boolean onSwitchTo(int i) {
+                        mPresenter.setDefaultIME(mIMElistId.get(i));
+                        return true;
+                    }
+                });
+                break;
+        }
         return null;
+    }
+
+    private void postChangeLanguage() {
+        mHandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                changeLanguage();
+            }
+        }, 10);
     }
 
     @Override
@@ -89,6 +150,18 @@ public class GeneralView extends BaseView {
         this.mIMEOptioin = IMElist.toArray(new String[IMElist.size()]);
         this.mNoSignalPowerOffOption = getResources().getStringArray(R.array.setting_normal_list);
         this.mScreenSaverOption = getResources().getStringArray(R.array.general_screensaver_timeout_list);
+    }
+
+    @Override
+    public void initFocus() {
+        mHandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if(mLanguageItem != null){
+                    mLanguageItem.requestFocus();
+                }
+            }
+        }, 10);
     }
 
     @Override

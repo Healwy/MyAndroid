@@ -3,6 +3,7 @@ package com.titan.titv.settings.base;
 import android.app.Application;
 import android.content.Context;
 import android.content.res.Resources;
+import android.os.Handler;
 import android.util.AttributeSet;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -21,6 +22,7 @@ abstract public class BaseView extends RelativeLayout {
     protected Context mContext;
     protected View mContentView;
     protected Resources mResources;
+    protected Handler mHandler;
 
     public BaseView(Application app) {
         this(app, null);
@@ -36,6 +38,7 @@ abstract public class BaseView extends RelativeLayout {
         mApp = app;
         mContext = app;
         mResources = app.getResources();
+        mHandler = new Handler();
         init();
     }
 
@@ -50,6 +53,8 @@ abstract public class BaseView extends RelativeLayout {
     abstract public void onCreate();
 
     abstract protected void initData();
+
+    abstract public void initFocus();
 
     abstract public void onResume();
 
