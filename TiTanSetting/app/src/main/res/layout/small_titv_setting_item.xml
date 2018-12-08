@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.titan.titv.settings.widgets.SmallSettingItem xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/setting_item_style"
+    android:layout_width="215dp"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1px"
+        android:duplicateParentState="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/item_bg_mid" />
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:duplicateParentState="true">
+
+        <TextView
+            android:id="@+id/tv_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:includeFontPadding="false"
+            android:textColor="@color/titv_setting_item_title_text_color"
+            android:textSize="@dimen/small_setting_item_title_text_size" />
+    </RelativeLayout>
+</com.titan.titv.settings.widgets.SmallSettingItem>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scaleType="fitXY"
+            android:src="@drawable/mask_tvmenu" />
+
+
+        <RelativeLayout
+            android:id="@+id/ds_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/title_marginLeft_ds"
+            android:layout_marginTop="52dp">
+
+            <TextView
+                android:id="@+id/title_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:includeFontPadding="false"
+                android:textColor="@color/title_big"
+                android:textSize="@dimen/title_big" />
+
+            <TextView
+                android:id="@+id/title_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_first"
+                android:includeFontPadding="false"
+                android:textColor="@color/titv_seting_item_summary_normal"
+                android:textSize="@dimen/entry_item_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/content_view"
+            android:layout_width="@dimen/ds_listview_width"
+            android:layout_height="420dp"
+            android:layout_marginLeft="@dimen/ds_marginLeft"
+            android:layout_marginTop="98dp"
+            android:gravity="center_vertical">
+
+            <com.titan.titv.settings.widgets.ScrollViewEx
+                android:id="@+id/scrollView1"
+                android:layout_width="@dimen/ds_listview_width"
+                android:layout_height="wrap_content"
+                android:fadingEdge="vertical"
+                android:fadingEdgeLength="50dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:overScrollMode="never"
+                android:requiresFadingEdge="vertical"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/scrollContentHolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipChildren="false"
+                    android:orientation="vertical" />
+            </com.titan.titv.settings.widgets.ScrollViewEx>
+        </RelativeLayout>
+    </RelativeLayout>
+</merge>

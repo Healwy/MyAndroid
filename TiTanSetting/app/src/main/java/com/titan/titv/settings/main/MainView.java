@@ -16,6 +16,7 @@ import com.titan.titv.settings.general.GeneralView;
 import com.titan.titv.settings.model.MainModel;
 import com.titan.titv.settings.model.SettingType;
 import com.titan.titv.settings.picture.PictureView;
+import com.titan.titv.settings.security.SecurityView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -117,7 +118,7 @@ public class MainView extends BaseView implements OnSettingItemClickListener {
                 startSourceview();
                 break;
             case SECURITY:
-//                startView(new SecurityView(mApp));
+                startView(new SecurityView(mApp));
                 break;
             case SYSTEM:
 //                startView(new SystemView(mApp));

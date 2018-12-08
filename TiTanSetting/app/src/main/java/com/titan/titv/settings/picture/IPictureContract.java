@@ -36,5 +36,7 @@ public interface IPictureContract {
 
         int getColorTemperature();
 
+        void reset();
+
     }
 }

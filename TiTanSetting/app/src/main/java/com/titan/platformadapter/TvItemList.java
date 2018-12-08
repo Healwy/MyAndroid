@@ -19,4 +19,10 @@ public class TvItemList {
         public static final int ITEM_PICTURE_PARAMETER = 1;
         public static int[] pictureCategoryList = {ITEM_BACKLIGHT, ITEM_PICTURE_PARAMETER,};
     }
+
+    public static class TvSecurityItem {
+        public static final int ITEM_INSTALL_UNKNOW_SOURCE = 0;
+        public static final int ITEM_ADB_DEBUG = 1;
+        public static int[] securityCategoryList = {ITEM_INSTALL_UNKNOW_SOURCE, ITEM_ADB_DEBUG,};
+    }
 }

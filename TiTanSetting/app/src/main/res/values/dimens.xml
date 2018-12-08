@@ -32,5 +32,12 @@
     <dimen name="titv_setting_item_iv_arrow_right_margin">16dp</dimen>
     <dimen name="titv_setting_item_tv_value_right_margin">60dp</dimen>
     <dimen name="titv_switcher_width">165dp</dimen>
+    <dimen name="title_marginLeft_ds">49dp</dimen>
+    <dimen name="entry_item_text_size">15sp</dimen>
+    <dimen name="ds_listview_width">230dp</dimen>
+    <dimen name="ds_marginLeft">42dp</dimen>
+    <dimen name="display_params_modeswitcher_top_margin">30dp</dimen>
+    <dimen name="display_params_modecategory_top_margin">10dp</dimen>
+    <dimen name="small_setting_item_title_text_size">16sp</dimen>
 
 </resources>

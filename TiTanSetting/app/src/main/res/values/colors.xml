@@ -63,7 +63,5 @@
     <color name="dolby_selected">#0067da</color>
     <color name="textcolor_selected">#31a0ff</color>
     <color name="textcolor_unselected">#ffffff</color>
-    <color name="itv_setting_item_summary_focus">#80ffffff</color>
-    <color name="itv_setting_item_summary_disabled">#20ffffff</color>
-    <color name="itv_setting_item_summary">#40ffffff</color>
+    <color name="titv_seting_item_summary_normal">#66ffffff</color>
 </resources>

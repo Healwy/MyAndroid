@@ -7,6 +7,5 @@ public interface IBaseContract {
     }
 
     interface BasePresenter {
-
     }
 }

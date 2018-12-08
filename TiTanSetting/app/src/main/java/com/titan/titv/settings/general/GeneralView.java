@@ -1,7 +1,6 @@
 package com.titan.titv.settings.general;
 
 import android.app.Application;
-import android.util.Log;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodInfo;
 import android.view.inputmethod.InputMethodManager;
@@ -49,10 +48,10 @@ public class GeneralView extends BaseView {
         initData();
         loadView();
         initFocus();
-        refreshView();
+        setUpGeneralUI();
     }
 
-    private void refreshView() {
+    private void setUpGeneralUI() {
         if("zh".equals(mPresenter.getLauanges())){
             this.mLanguageItem.setCurrentIndex(0);
         }else{

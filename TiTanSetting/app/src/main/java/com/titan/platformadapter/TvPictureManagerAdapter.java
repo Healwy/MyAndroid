@@ -14,34 +14,46 @@ public class TvPictureManagerAdapter {
     /**
      * picture mode user
      */
-    public static final int PICTURE_MODE_USER_ADAPTER = 0;
+    public static final int PICTURE_MODE_USER = 0;
     /**
      * picture mode normal
      */
-    public static final int PICTURE_MODE_NORMAL_ADAPTER = 1;
+    public static final int PICTURE_MODE_NORMAL = 1;
     /**
      * picture mode vivid
      */
-    public static final int PICTURE_MODE_VIVID_ADAPTER = 2;
+    public static final int PICTURE_MODE_VIVID_ = 2;
     /**
      * picture mode cinma
      */
-    public static final int PICTURE_MODE_CINMA_ADAPTER = 3;
+    public static final int PICTURE_MODE_CINMA = 3;
 
 
     /* This value is mapping to EN_MS_COLOR_TEMP */
     /**
      * color temperature cool
      */
-    public static final int COLOR_TEMP_COOL_ADAPTER = 0;
+    public static final int COLOR_TEMP_COOL = 0;
     /**
      * color temperature standard
      */
-    public static final int COLOR_TEMP_NATURE_ADAPTER = 1;
+    public static final int COLOR_TEMP_NATURE = 1;
     /**
      * color temperature warm
      */
-    public static final int COLOR_TEMP_WARM_ADAPTER = 2;
+    public static final int COLOR_TEMP_WARM = 2;
+
+
+    public static final int DEFAULT_PICTUREMODE = PICTURE_MODE_USER;
+    public static final int DEFAULT_BRIGHTNESS = 50;
+    public static final int DEFAULT_CONTRAST = 50;
+    public static final int DEFAULT_SATURATION = 50;
+    public static final int DEFAULT_SHARPNESS = 50;
+    public static final int DEFAULT_HUE = 0;
+    public static final int DEFAULT_BACKLIGHT = 50;
+    public static final int DEFAULT_COLORTEMPERATURE = COLOR_TEMP_NATURE;
+
+
     private static int PictureMode;
     private static int Brightness;
     private static int Contrast;

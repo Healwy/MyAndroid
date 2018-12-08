@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.titan.titv.settings.widgets.SmallSwitcherItem xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/setting_item_style"
+    android:layout_width="215dp"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1px"
+        android:duplicateParentState="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/item_bg_mid" />
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:duplicateParentState="true">
+
+        <TextView
+            android:id="@+id/tv_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:textColor="@color/titv_setting_item_title_text_color"
+            android:textSize="@dimen/small_setting_item_title_text_size" />
+
+        <TextView
+            android:id="@+id/tv_key_desc"
+            android:layout_width="@dimen/titv_setting_item_summary_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_key"
+            android:duplicateParentState="true"
+            android:textColor="@color/titv_setting_item_summary_color"
+            android:textSize="@dimen/titv_setting_item_summary_text_size"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/arrow_group"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7dp"
+        android:duplicateParentState="true">
+
+        <ImageView
+            android:id="@+id/iv_switcher_left_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/triangle_normal_left_normal" />
+
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:duplicateParentState="true"
+            android:textColor="@color/titv_setting_item_title_text_color"
+            android:textSize="@dimen/small_setting_item_title_text_size" />
+
+        <ImageView
+            android:id="@+id/iv_switcher_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/triangle_normal_right_normal" />
+    </RelativeLayout>
+</com.titan.titv.settings.widgets.SmallSwitcherItem>

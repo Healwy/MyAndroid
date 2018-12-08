@@ -1,6 +1,7 @@
 package com.titan.titv.settings.picture;
 
 import android.app.Application;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
@@ -9,6 +10,7 @@ import com.titan.titv.settings.R;
 import com.titan.titv.settings.base.BaseView;
 import com.titan.titv.settings.widgets.SettingCategory;
 import com.titan.titv.settings.widgets.SettingItem;
+import com.titan.titv.settings.widgets.SwitcherItem;
 
 public class PictureView extends BaseView {
 
@@ -19,6 +21,9 @@ public class PictureView extends BaseView {
     private String[] mNormalOption;
     private ViewGroup mContentHolder;
     private SettingCategory mPictureCategory;
+    private SwitcherItem mBackLightItem;
+    private SettingItem mPictureParameterItem;
+    private SettingItem mClickedItem;
 
     public PictureView(Application app) {
         super(app);
@@ -41,7 +46,7 @@ public class PictureView extends BaseView {
     }
 
     private void refreshViewValue() {
-
+        this.mBackLightItem.setCurrentIndex(mPresenter.getBacklight());
     }
 
     private void loadViews() {
@@ -59,7 +64,38 @@ public class PictureView extends BaseView {
         }
     }
 
+
     private SettingItem getItem(int index, SettingCategory group) {
+        switch (index) {
+            case TvItemList.TvPictureItem.ITEM_BACKLIGHT:
+                this.mBackLightItem = SwitcherItem.createItem(group);
+                this.mBackLightItem.setTitle(R.string.picture_backlight);
+                this.mBackLightItem.setOptions(this.mNormalOption);
+                this.mBackLightItem.setRecycle(false);
+                this.mBackLightItem.setRepeated(true);
+                this.mBackLightItem.setOnSwitchListener(new SwitcherItem.OnSwitchListener() {
+                    @Override
+                    public boolean onSwitchTo(int i) {
+                        mPresenter.setBacklight(i);
+                        return true;
+                    }
+                });
+                break;
+            case TvItemList.TvPictureItem.ITEM_PICTURE_PARAMETER:
+                this.mPictureParameterItem = SettingItem.createItem(group);
+                this.mPictureParameterItem.setTitle(R.string.picture_param);
+                this.mPictureParameterItem.setRightArrowVisibility(View.VISIBLE);
+                this.mPictureParameterItem.setOnClickListener(new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        startView(new PictureParamView(mApp));
+                        mClickedItem = mPictureParameterItem;
+                    }
+                });
+                break;
+            default:
+                return null;
+        }
         return null;
     }
 
@@ -75,12 +111,19 @@ public class PictureView extends BaseView {
 
     @Override
     public void initFocus() {
-
+        mHandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if(mBackLightItem != null){
+                    mBackLightItem.requestFocus();
+                }
+            }
+        }, 10);
     }
 
     @Override
     public void onResume() {
-
+        mClickedItem.requestFocus();
     }
 
     @Override

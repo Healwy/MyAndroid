@@ -81,7 +81,6 @@ public class MainAdapterDelegate extends AbsListItemAdapterDelegate<MainModel, B
 
     @Override
     protected void onBindViewHolder(MainModel item, CategoryViewHolder viewHolder, int pos, List<Object> payloads) {
-        //TODO
     }
 
     static class CategoryViewHolder extends RecyclerView.ViewHolder {

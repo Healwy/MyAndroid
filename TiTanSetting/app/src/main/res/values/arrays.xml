@@ -5,13 +5,31 @@
         <item>开启</item>
     </string-array>
 
-    <string-array name="general_screensaver_timeout_list" >
+    <string-array name="setting_deny_allow_list">
+        <item>允许</item>
+        <item>拒绝</item>
+    </string-array>
+
+    <string-array name="general_screensaver_timeout_list">
         <item>关闭</item>
         <item>1分钟</item>
         <item>2分钟</item>
         <item>4分钟</item>
         <item>8分钟</item>
         <item>12分钟</item>
+    </string-array>
+
+    <string-array name="setting_picture_mode">
+        <item>自定义</item>
+        <item>标准</item>
+        <item>艳丽</item>
+        <item>影院</item>
+    </string-array>
+
+    <string-array name="setting_picture_color_temperature">
+        <item>冷色</item>
+        <item>标准</item>
+        <item>暖色</item>
     </string-array>
 
 

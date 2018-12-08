@@ -13,5 +13,17 @@
     <string name="general_save_energy">节能</string>
     <string name="general_language_setting">语言设置</string>
     <string name="general_input">输入法</string>
+    <string name="picture_backlight">背光</string>
+    <string name="picture_param">图像参数</string>
+    <string name="picture_pictureMode">图像模式</string>
+    <string name="picture_brightness">亮度</string>
+    <string name="picture_contrast">对比度</string>
+    <string name="picture_saturation">色度</string>
+    <string name="picture_hue">色调</string>
+    <string name="picture_sharpness">清晰度</string>
+    <string name="picture_color_temperature">色温</string>
+    <string name="picture_reset">复位</string>
+    <string name="security_adb_debug">ADB调试</string>
+    <string name="security_unknown_sources">允许未知来源</string>
 
 </resources>
