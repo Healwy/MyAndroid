@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TiTanSetting</string>
+    <string name="app_name">设置</string>
     <string name="main_general">通用</string>
     <string name="main_picture">图像</string>
     <string name="main_sound">声音</string>
@@ -25,5 +25,19 @@
     <string name="picture_reset">复位</string>
     <string name="security_adb_debug">ADB调试</string>
     <string name="security_unknown_sources">允许未知来源</string>
+    <string name="system_information">系统信息</string>
+    <string name="system_legal_license">开放源代码许可</string>
+    <string name="system_subscriber_agreement">用户协议</string>
+    <string name="system_local_update">本地升级</string>
+    <string name="network_network_update">网络升级</string>
+    <string name="system_restore">系统还原</string>
+    <string name="sound_system_sound">按键音</string>
+    <string name="sound_effect">音效</string>
+    <string name="sound_mode">声音模式</string>
+    <string name="sound_treble">高音</string>
+    <string name="sound_bass">低音</string>
+    <string name="sound_surround">环绕声</string>
+    <string name="sound_balance">平衡</string>
+    <string name="sound_reset">复位</string>
 
 </resources>

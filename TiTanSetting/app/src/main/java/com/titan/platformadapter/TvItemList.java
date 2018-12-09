@@ -20,9 +20,25 @@ public class TvItemList {
         public static int[] pictureCategoryList = {ITEM_BACKLIGHT, ITEM_PICTURE_PARAMETER,};
     }
 
+    public static class TvSoundItem {
+        public static final int ITEM_SYSTEM_SOUND = 0;
+        public static final int ITEM_SOUND_PARAM = 1;
+        public static int[] pictureCategoryList = {ITEM_SYSTEM_SOUND, ITEM_SOUND_PARAM,};
+    }
+
     public static class TvSecurityItem {
         public static final int ITEM_INSTALL_UNKNOW_SOURCE = 0;
         public static final int ITEM_ADB_DEBUG = 1;
         public static int[] securityCategoryList = {ITEM_INSTALL_UNKNOW_SOURCE, ITEM_ADB_DEBUG,};
+    }
+
+    public static class TvSystemItem {
+        public static final int ITEM_SYSTEM_INFORMATION = 0;
+        public static final int ITEM_SOURCE_LICENCE = 1;
+        public static final int ITEM_USER_AGREEMENT = 2;
+        public static final int ITEM_LOCALE_UPDATE = 3;
+        public static final int ITEM_NETWORK_UPDATE = 4;
+        public static final int ITEM_SYSTEM_RESTORE = 5;
+        public static int[] systemCategoryList = {ITEM_SYSTEM_INFORMATION, ITEM_SOURCE_LICENCE, ITEM_LOCALE_UPDATE, ITEM_NETWORK_UPDATE, ITEM_SYSTEM_RESTORE};
     }
 }

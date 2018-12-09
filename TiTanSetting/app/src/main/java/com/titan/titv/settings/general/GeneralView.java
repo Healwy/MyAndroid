@@ -58,8 +58,8 @@ public class GeneralView extends BaseView {
             this.mLanguageItem.setCurrentIndex(1);
         }
 
-        String defIMEString = mPresenter.getDefaultIME();
-        int defIMEIndex = this.mIMElistId.indexOf(defIMEString);
+        String defIMEStr = mPresenter.getDefaultIME();
+        int defIMEIndex = this.mIMElistId.indexOf(defIMEStr);
         this.mImeItem.setCurrentIndex(defIMEIndex);
 
     }

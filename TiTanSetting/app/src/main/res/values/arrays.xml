@@ -32,5 +32,11 @@
         <item>暖色</item>
     </string-array>
 
+    <string-array name="setting_sound_mode">
+        <item>自定义</item>
+        <item>标准</item>
+        <item>音乐</item>
+        <item>清晰</item>
+    </string-array>
 
 </resources>

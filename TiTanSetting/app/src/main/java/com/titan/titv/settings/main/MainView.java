@@ -17,6 +17,8 @@ import com.titan.titv.settings.model.MainModel;
 import com.titan.titv.settings.model.SettingType;
 import com.titan.titv.settings.picture.PictureView;
 import com.titan.titv.settings.security.SecurityView;
+import com.titan.titv.settings.sound.SoundView;
+import com.titan.titv.settings.system.SystemView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -109,7 +111,7 @@ public class MainView extends BaseView implements OnSettingItemClickListener {
                 startView(new PictureView(mApp));
                 break;
             case SOUND:
-//                 startView(new SoundView(mApp));
+                 startView(new SoundView(mApp));
                 break;
             case NETWORK:
 //                 startView(new NetWorkView(mApp));
@@ -121,7 +123,7 @@ public class MainView extends BaseView implements OnSettingItemClickListener {
                 startView(new SecurityView(mApp));
                 break;
             case SYSTEM:
-//                startView(new SystemView(mApp));
+                startView(new SystemView(mApp));
                 break;
             default:
                 break;

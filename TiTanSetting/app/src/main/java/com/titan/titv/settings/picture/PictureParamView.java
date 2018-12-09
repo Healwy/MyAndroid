@@ -222,7 +222,7 @@ public class PictureParamView extends BaseView {
         if (mPresenter != null) {
             PictureParamView.this.mCurrentMode = PICTURE_MODE_USER;
             setUpPictureParamUI();
-            setUpPictureParam();
+            setUpPictureParamValue();
         }
 
     }
@@ -243,7 +243,7 @@ public class PictureParamView extends BaseView {
         }
     }
 
-    private void setUpPictureParam() {
+    private void setUpPictureParamValue() {
         mHandler.post(new Runnable() {
             @Override
             public void run() {
