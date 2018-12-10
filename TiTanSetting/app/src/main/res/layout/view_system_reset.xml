@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_title" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/main_setting_width"
+        android:layout_height="@dimen/main_setting_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/tv_common_list_mid"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/system_update_reset"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/common_text_size_80" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <com.titan.titv.settings.widgets.TvButton
+                    android:id="@+id/btn_ok"
+                    android:layout_width="@dimen/system_btn_width"
+                    android:layout_height="@dimen/system_btn_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/system_btn_marginLeft"
+                    android:focusable="true"
+                    android:text="@string/confirm"
+                    android:textSize="@dimen/common_text_size_80">
+
+                    <requestFocus />
+                </com.titan.titv.settings.widgets.TvButton>
+
+                <com.titan.titv.settings.widgets.TvButton
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="@dimen/system_btn_width"
+                    android:layout_height="@dimen/system_btn_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/system_btn_marginRight"
+                    android:layout_weight="1"
+                    android:onClick="doClick"
+                    android:text="@string/cancel"
+                    android:textSize="@dimen/common_text_size_80" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/progress_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="@string/system_reset_wait"
+                android:textColor="@color/common_text_color"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -40,4 +40,14 @@
     <dimen name="display_params_modecategory_top_margin">10dp</dimen>
     <dimen name="small_setting_item_title_text_size">16sp</dimen>
 
+    <dimen name="common_divid_line">1.0dp</dimen>
+    <dimen name="system_info_name_width">229.5dp</dimen>
+    <dimen name="system_info_name_marginBottom">5.0dp</dimen>
+    <dimen name="system_info_name_paddingLeft">32.5dp</dimen>
+    <dimen name="system_info_name_textSize">16.0dp</dimen>
+    <dimen name="common_text_size_80">20.0dp</dimen>
+    <dimen name="system_btn_width">155.0dp</dimen>
+    <dimen name="system_btn_height">60.0dp</dimen>
+    <dimen name="system_btn_marginLeft">100.0dp</dimen>
+    <dimen name="system_btn_marginRight">100.0dp</dimen>
 </resources>

@@ -39,5 +39,22 @@
     <string name="sound_surround">环绕声</string>
     <string name="sound_balance">平衡</string>
     <string name="sound_reset">复位</string>
+    <string name="system_display_size">43吋</string>
+    <string name="system_resolution">3840 x 2160 (4K)</string>
+    <string name="system_cpu">CA72x2+CA53x2@1.1G(QUAD Core)</string>
+    <string name="system_gpu">Mali-T820</string>
+    <string name="system_android">Android %1$s</string>
+    <string name="system_info_resolution">分辨率</string>
+    <string name="system_info_cpu">主处理器</string>
+    <string name="system_info_gpu">图形处理器</string>
+    <string name="system_info_rom_ram">存储空间/运行内存</string>
+    <string name="system_info_ethernet_mac">以太网MAC地址</string>
+    <string name="system_info_wireless_mac">无线网MAC地址</string>
+    <string name="system_info_system_version">操作系统版本</string>
+    <string name="system_info_sdk_version">Sdk软件版本</string>
+    <string name="system_update_reset">是否恢复出厂设置?这将会重启你的电视</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="system_reset_wait">恢复中...</string>
 
 </resources>

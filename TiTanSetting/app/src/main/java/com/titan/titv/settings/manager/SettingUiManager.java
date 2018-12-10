@@ -10,6 +10,8 @@ import android.widget.RelativeLayout;
 
 import com.titan.titv.settings.base.BaseView;
 import com.titan.titv.settings.main.MainView;
+import com.titan.titv.settings.picture.PictureParamView;
+import com.titan.titv.settings.sound.SoundEffectView;
 import com.titan.titv.settings.utils.LogUtils;
 
 public class SettingUiManager {
@@ -76,7 +78,7 @@ public class SettingUiManager {
     public void addView(BaseView view) {
         LogUtils.d("Function Start");
         if (mDecorView.getChildCount() > 0) {
-            (mDecorView.getChildAt(mDecorView.getChildCount() - 1)).setVisibility(View.INVISIBLE);
+            (mDecorView.getChildAt(mDecorView.getChildCount() - 1)).setVisibility(View.GONE);
             ((BaseView) mDecorView.getChildAt(mDecorView.getChildCount() - 1)).onPause();
         }
         mDecorView.addView(view);
@@ -114,9 +116,9 @@ public class SettingUiManager {
         if (isShow) return;
         isShow = true;
         mDecorView = new FrameLayout(mApp);
-      //  PictureParamView view = new PictureParamView(mApp);
-       // mDecorView.addView(view);
-       // view.onCreate();
+        PictureParamView view = new PictureParamView(mApp);
+        mDecorView.addView(view);
+        view.onCreate();
         mWindowManager.addView(mDecorView, mParams);
         LogUtils.d("Function End");
     }
@@ -127,9 +129,9 @@ public class SettingUiManager {
         if (isShow) return;
         isShow = true;
         mDecorView = new FrameLayout(mApp);
-//        SoundEffectView view = new SoundEffectView(mApp);
-////        mDecorView.addView(view);
-////        view.onCreate();
+        SoundEffectView view = new SoundEffectView(mApp);
+        mDecorView.addView(view);
+        view.onCreate();
         mWindowManager.addView(mDecorView, mParams);
         LogUtils.d("Function End");
     }
