@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.titan.titv.settings.widgets.SmallSettingItem xmlns:android="http://schemas.android.com/apk/res/android"
+<com.titan.settings.widgets.SmallSettingItem xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/setting_item_style"
     android:layout_width="215dp"
     android:layout_height="50dp"
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:duplicateParentState="true"
             android:includeFontPadding="false"
-            android:textColor="@color/titv_setting_item_title_text_color"
+            android:textColor="@color/setting_item_title_text_color"
             android:textSize="@dimen/small_setting_item_title_text_size" />
     </RelativeLayout>
-</com.titan.titv.settings.widgets.SmallSettingItem>
+</com.titan.settings.widgets.SmallSettingItem>

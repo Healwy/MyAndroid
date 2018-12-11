@@ -19,14 +19,14 @@
     <color name="common_text_color_selected">#2f353e</color>
     <color name="common_text_color_graty">#808008</color>
 
-    <color name="titv_switcher_item_value">#0074ff</color>
-    <color name="titv_setting_item_title_normal">#ffffff</color>
-    <color name="titv_setting_item_title_focused">#ffffffff</color>
-    <color name="titv_setting_item_title_disabled">#40ffffff</color>
-    <color name="titv_setting_item_summary_normal">#66ffffff</color>
-    <color name="titv_setting_item_summary_focus">#80ffffff</color>
-    <color name="titv_setting_item_summary_disabled">#20ffffff</color>
-    <color name="titv_setting_item_summary">#40ffffff</color>
+    <color name="switcher_item_value">#0074ff</color>
+    <color name="setting_item_title_normal">#ffffff</color>
+    <color name="setting_item_title_focused">#ffffffff</color>
+    <color name="setting_item_title_disabled">#40ffffff</color>
+    <color name="setting_item_summary_normal">#66ffffff</color>
+    <color name="setting_item_summary_focus">#80ffffff</color>
+    <color name="setting_item_summary_disabled">#20ffffff</color>
+    <color name="setting_item_summary">#40ffffff</color>
     <color name="title_big">#ffffff</color>
     <color name="titv_category_title">#80ffffff</color>
     <color name="xiaoqiang_ap_name">#faf408</color>
@@ -63,5 +63,5 @@
     <color name="dolby_selected">#0067da</color>
     <color name="textcolor_selected">#31a0ff</color>
     <color name="textcolor_unselected">#ffffff</color>
-    <color name="titv_seting_item_summary_normal">#66ffffff</color>
+    <color name="seting_item_summary_normal">#66ffffff</color>
 </resources>

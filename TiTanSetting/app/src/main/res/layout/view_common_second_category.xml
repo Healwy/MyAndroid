@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/title_first"
                 android:includeFontPadding="false"
-                android:textColor="@color/titv_seting_item_summary_normal"
+                android:textColor="@color/seting_item_summary_normal"
                 android:textSize="@dimen/entry_item_text_size" />
         </RelativeLayout>
 
@@ -53,7 +53,7 @@
             android:layout_marginTop="98dp"
             android:gravity="center_vertical">
 
-            <com.titan.titv.settings.widgets.ScrollViewEx
+            <com.titan.settings.widgets.ScrollViewEx
                 android:id="@+id/scrollView1"
                 android:layout_width="@dimen/ds_listview_width"
                 android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
                     android:layout_height="match_parent"
                     android:clipChildren="false"
                     android:orientation="vertical" />
-            </com.titan.titv.settings.widgets.ScrollViewEx>
+            </com.titan.settings.widgets.ScrollViewEx>
         </RelativeLayout>
     </RelativeLayout>
 </merge>

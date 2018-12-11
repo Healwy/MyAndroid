@@ -6,8 +6,9 @@
     <string name="main_network">连接</string>
     <string name="main_security">安全</string>
     <string name="main_system">系统</string>
-
-    <!--general-->
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
     <string name="general_language_zh">中文</string>
     <string name="general_language_en">英文</string>
     <string name="general_save_energy">节能</string>
@@ -53,13 +54,15 @@
     <string name="system_info_system_version">操作系统版本</string>
     <string name="system_info_sdk_version">Sdk软件版本</string>
     <string name="system_update_reset">是否恢复出厂设置?这将会重启你的电视</string>
-    <string name="confirm">确定</string>
-    <string name="cancel">取消</string>
     <string name="system_reset_wait">恢复中...</string>
     <string name="network_wireless_hotspot">无线热点</string>
     <string name="network_hotspot_keymgmt">安全性</string>
     <string name="network_hotspot_ssid">网络名称</string>
     <string name="network_hotspot_passwd">密码</string>
-    <string name="save">保存</string>
+    <string name="network_wired_settings">有线网络</string>
+    <string name="network_wireless_title">无线网络</string>
+    <string name="network_bluetooth">蓝牙</string>
+    <string name="network_pppoe">PPPOE</string>
+    <string name="network_sim_4g">4G</string>
 
 </resources>

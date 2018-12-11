@@ -1,9 +1,9 @@
 1、修改Androidmainfest.xml文件为系统应用
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.titan.titv.settings"
+    package="com.titan.settings"
     android:sharedUserId="android.uid.system">
 
-2、com.titan.titv.settings.manager.SettingUiManager 修改initParams()函数
+2、com.titan.settings.manager.SettingUiManager 修改initParams()函数
 mParams.type = WindowManager.LayoutParams.TYPE_TOAST;
 改为
 mParams.type = WindowManager.LayoutParams.TYPE_PHONE;

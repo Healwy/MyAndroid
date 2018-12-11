@@ -6,7 +6,7 @@ import android.os.Build;
 import android.os.Environment;
 import android.os.StatFs;
 
-import com.titan.titv.settings.R;
+import com.titan.settings.R;
 
 import java.io.File;
 import java.text.DecimalFormat;

@@ -13,7 +13,7 @@
         android:layout_marginTop="130dp"
         android:orientation="vertical">
 
-        <com.titan.titv.settings.widgets.ScrollViewEx
+        <com.titan.settings.widgets.ScrollViewEx
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:clipChildren="false"
@@ -64,7 +64,7 @@
                             android:textColor="@color/common_text_color"
                             android:textSize="@dimen/common_text_size" />
 
-                        <com.titan.titv.settings.widgets.ShowKeyBoardEditText
+                        <com.titan.settings.widgets.ShowKeyBoardEditText
                             android:id="@+id/hotspot_ssid"
                             android:layout_width="@dimen/wifi_setting_value_width"
                             android:layout_height="wrap_content"
@@ -106,7 +106,7 @@
                             android:textColor="@color/common_text_color"
                             android:textSize="@dimen/common_text_size" />
 
-                        <com.titan.titv.settings.widgets.ShowKeyBoardEditText
+                        <com.titan.settings.widgets.ShowKeyBoardEditText
                             android:id="@+id/hotspot_passwd"
                             android:layout_width="@dimen/wifi_setting_value_width"
                             android:layout_height="wrap_content"
@@ -133,7 +133,7 @@
                         android:layout_marginTop="10dp"
                         android:orientation="horizontal">
 
-                        <com.titan.titv.settings.widgets.TvButton
+                        <com.titan.settings.widgets.TvButton
                             android:id="@+id/hotspot_save"
                             android:layout_width="@dimen/wifi_btn_width"
                             android:layout_height="@dimen/wifi_btn_height"
@@ -142,7 +142,7 @@
                             android:text="@string/save"
                             android:textSize="@dimen/common_text_size_80" />
 
-                        <com.titan.titv.settings.widgets.TvButton
+                        <com.titan.settings.widgets.TvButton
                             android:id="@+id/hotspot_cancel"
                             android:layout_width="@dimen/wifi_btn_width"
                             android:layout_height="@dimen/wifi_btn_height"
@@ -153,7 +153,7 @@
                     </RelativeLayout>
                 </LinearLayout>
             </LinearLayout>
-        </com.titan.titv.settings.widgets.ScrollViewEx>
+        </com.titan.settings.widgets.ScrollViewEx>
     </LinearLayout>
 
 </RelativeLayout>

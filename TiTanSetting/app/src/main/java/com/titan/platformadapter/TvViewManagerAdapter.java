@@ -31,33 +31,16 @@ public class TvViewManagerAdapter {
 
     public void systemLocalUpdate() {
         try {
-            Intent intent = systemIntent(SETTINGS_LOCAL_UPDATE_SYSTEM);
-            if (intent != null) {
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                mContext.startActivity(intent);
-            }
+            Intent sendIntent = new Intent(Intent.ACTION_MAIN);
+            ComponentName componentName = new ComponentName("com.titan.tvlocalupdate",
+                    "com.titan.tvlocalupdate.SystemLocalUpdateActivity");
+            sendIntent.setComponent(componentName);
+            sendIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            mContext.startActivity(sendIntent);
         } catch (ActivityNotFoundException e) {
             e.printStackTrace();
         }
     }
-
-    private Intent systemIntent(String action) {
-        final Intent intent = new Intent(action);
-
-        // Limit the intent to an activity that is in the system image.
-        final PackageManager pm = mContext.getPackageManager();
-        final List<ResolveInfo> activities = pm.queryIntentActivities(intent, 0);
-        for (ResolveInfo info : activities) {
-            if ((info.activityInfo.applicationInfo.flags & ApplicationInfo.FLAG_SYSTEM) != 0) {
-                if (info.activityInfo.isEnabled()) {
-                    intent.setPackage(info.activityInfo.packageName);
-                    return intent;
-                }
-            }
-        }
-        return null;  // No system image package found.
-    }
-
 
     public void systemNetworkUpdate() {
         try {

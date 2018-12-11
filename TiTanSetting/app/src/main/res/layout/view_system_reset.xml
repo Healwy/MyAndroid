@@ -41,7 +41,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="10dp">
 
-                <com.titan.titv.settings.widgets.TvButton
+                <com.titan.settings.widgets.TvButton
                     android:id="@+id/btn_ok"
                     android:layout_width="@dimen/system_btn_width"
                     android:layout_height="@dimen/system_btn_height"
@@ -52,9 +52,9 @@
                     android:textSize="@dimen/common_text_size_80">
 
                     <requestFocus />
-                </com.titan.titv.settings.widgets.TvButton>
+                </com.titan.settings.widgets.TvButton>
 
-                <com.titan.titv.settings.widgets.TvButton
+                <com.titan.settings.widgets.TvButton
                     android:id="@+id/btn_cancel"
                     android:layout_width="@dimen/system_btn_width"
                     android:layout_height="@dimen/system_btn_height"

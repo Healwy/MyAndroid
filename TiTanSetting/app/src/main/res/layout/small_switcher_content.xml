@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.titan.titv.settings.widgets.SmallSwitcherItem xmlns:android="http://schemas.android.com/apk/res/android"
+<com.titan.settings.widgets.SmallSwitcherItem xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/setting_item_style"
     android:layout_width="215dp"
     android:layout_height="50dp"
@@ -31,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:duplicateParentState="true"
-            android:textColor="@color/titv_setting_item_title_text_color"
+            android:textColor="@color/setting_item_title_text_color"
             android:textSize="@dimen/small_setting_item_title_text_size" />
 
         <TextView
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_key"
             android:duplicateParentState="true"
-            android:textColor="@color/titv_setting_item_summary_color"
+            android:textColor="@color/setting_item_summary_color"
             android:textSize="@dimen/titv_setting_item_summary_text_size"
             android:visibility="gone" />
     </RelativeLayout>
@@ -68,7 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:duplicateParentState="true"
-            android:textColor="@color/titv_setting_item_title_text_color"
+            android:textColor="@color/setting_item_title_text_color"
             android:textSize="@dimen/small_setting_item_title_text_size" />
 
         <ImageView
@@ -79,4 +79,4 @@
             android:layout_centerVertical="true"
             android:src="@drawable/triangle_normal_right_normal" />
     </RelativeLayout>
-</com.titan.titv.settings.widgets.SmallSwitcherItem>
+</com.titan.settings.widgets.SmallSwitcherItem>

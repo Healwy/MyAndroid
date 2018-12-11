@@ -41,4 +41,14 @@ public class TvItemList {
         public static final int ITEM_SYSTEM_RESTORE = 5;
         public static int[] systemCategoryList = {ITEM_SYSTEM_INFORMATION, ITEM_SOURCE_LICENCE, ITEM_LOCALE_UPDATE, ITEM_NETWORK_UPDATE, ITEM_SYSTEM_RESTORE};
     }
+
+    public static class TvNetworkItem {
+        public static final int ITEM_WIRED_CONNECT = 0;
+        public static final int ITEM_WIRRELESS_CONNECT = 1;
+        public static final int ITEM_BLUETOOTH = 2;
+        public static final int ITEM_WIRELESS_HOTSPOT = 3;
+        public static final int ITEM_PPPOE = 4;
+        public static final int ITEM_SIM_4G = 5;
+        public static int[] networkCategoryList = {ITEM_WIRED_CONNECT, ITEM_WIRRELESS_CONNECT, ITEM_WIRELESS_HOTSPOT, ITEM_SIM_4G};
+    }
 }
