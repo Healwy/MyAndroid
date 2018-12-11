@@ -56,5 +56,10 @@
     <string name="confirm">确定</string>
     <string name="cancel">取消</string>
     <string name="system_reset_wait">恢复中...</string>
+    <string name="network_wireless_hotspot">无线热点</string>
+    <string name="network_hotspot_keymgmt">安全性</string>
+    <string name="network_hotspot_ssid">网络名称</string>
+    <string name="network_hotspot_passwd">密码</string>
+    <string name="save">保存</string>
 
 </resources>

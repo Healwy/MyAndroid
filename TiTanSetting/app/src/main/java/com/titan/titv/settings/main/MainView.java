@@ -15,6 +15,7 @@ import com.titan.titv.settings.base.TVGirdLayoutManager;
 import com.titan.titv.settings.general.GeneralView;
 import com.titan.titv.settings.model.MainModel;
 import com.titan.titv.settings.model.SettingType;
+import com.titan.titv.settings.network.hotspot.HotspotView;
 import com.titan.titv.settings.picture.PictureView;
 import com.titan.titv.settings.security.SecurityView;
 import com.titan.titv.settings.sound.SoundView;
@@ -114,7 +115,7 @@ public class MainView extends BaseView implements OnSettingItemClickListener {
                  startView(new SoundView(mApp));
                 break;
             case NETWORK:
-//                 startView(new NetWorkView(mApp));
+                 startView(new HotspotView(mApp));
                 break;
             case SOURCE:
                 startSourceview();

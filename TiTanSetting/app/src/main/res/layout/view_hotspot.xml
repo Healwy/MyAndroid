@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_title" />
+
+    <LinearLayout
+        android:layout_width="@dimen/wifi_menu_width"
+        android:layout_height="@dimen/main_setting_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:orientation="vertical">
+
+        <com.titan.titv.settings.widgets.ScrollViewEx
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:fadingEdge="vertical"
+            android:fadingEdgeLength="50dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:overScrollMode="never"
+            android:requiresFadingEdge="vertical"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/wifi_setting_pad"
+                android:paddingRight="@dimen/wifi_setting_pad">
+
+                <RelativeLayout
+                        android:id="@+id/hotspot_open"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                <LinearLayout
+                	android:id="@+id/hotspot_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/hotspot_ssid_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/wifi_option_height"
+                        android:layout_marginTop="@dimen/common_divid_line"
+                        android:background="@drawable/tv_common_list_mid"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:descendantFocusability="afterDescendants">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/wifi_text_marginLeft"
+                            android:gravity="left"
+                            android:text="@string/network_hotspot_ssid"
+                            android:textColor="@color/common_text_color"
+                            android:textSize="@dimen/common_text_size" />
+
+                        <com.titan.titv.settings.widgets.ShowKeyBoardEditText
+                            android:id="@+id/hotspot_ssid"
+                            android:layout_width="@dimen/wifi_setting_value_width"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/wifi_text_marginRight"
+                            android:background="@android:color/transparent"
+                            android:padding="@dimen/ethernet_edit_text_padding"
+                            android:textColor="@color/common_text_color"
+                            android:textSize="@dimen/common_text_size" 
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/hotspot_KeyMgmt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_divid_line"/>
+
+                    <RelativeLayout
+                        android:id="@+id/hotspot_passwd_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/wifi_option_height"
+                        android:layout_marginTop="@dimen/common_divid_line"
+                        android:background="@drawable/tv_common_list_mid"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/wifi_text_marginLeft"
+                            android:gravity="left"
+                            android:text="@string/network_hotspot_passwd"
+                            android:textColor="@color/common_text_color"
+                            android:textSize="@dimen/common_text_size" />
+
+                        <com.titan.titv.settings.widgets.ShowKeyBoardEditText
+                            android:id="@+id/hotspot_passwd"
+                            android:layout_width="@dimen/wifi_setting_value_width"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/wifi_text_marginRight"
+                            android:background="@android:color/transparent"
+                            android:padding="@dimen/ethernet_edit_text_padding"
+                            android:textColor="@color/common_text_color"
+                            android:textSize="@dimen/common_text_size" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/hotspot_frequency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_divid_line" />
+
+                    <RelativeLayout
+                        android:id="@+id/hotspot_save_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/wifi_btn_width"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <com.titan.titv.settings.widgets.TvButton
+                            android:id="@+id/hotspot_save"
+                            android:layout_width="@dimen/wifi_btn_width"
+                            android:layout_height="@dimen/wifi_btn_height"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/wifi_btn_marginLeft"
+                            android:text="@string/save"
+                            android:textSize="@dimen/common_text_size_80" />
+
+                        <com.titan.titv.settings.widgets.TvButton
+                            android:id="@+id/hotspot_cancel"
+                            android:layout_width="@dimen/wifi_btn_width"
+                            android:layout_height="@dimen/wifi_btn_height"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/wifi_btn_marginRight"
+                            android:text="@string/cancel"
+                            android:textSize="@dimen/common_text_size_80" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.titan.titv.settings.widgets.ScrollViewEx>
+    </LinearLayout>
+
+</RelativeLayout>
