@@ -85,11 +85,11 @@ public class HotspotView extends BaseView implements View.OnClickListener {
         this.mOpenItem.setOnSwitchListener(new SwitcherItem.OnSwitchListener() {
             public boolean onSwitchTo(int index) {
                 mOpenValue = index;
-                refreshView();
+                setUpHotspotUI();
                 return true;
             }
         });
-        this.mOpenItem.setNextFocusUpId(R.id.hotspot_save);
+
 
 
         this.mKeyMgmtLayout = (RelativeLayout)mContentView.findViewById(R.id.hotspot_KeyMgmt);
@@ -101,11 +101,11 @@ public class HotspotView extends BaseView implements View.OnClickListener {
         this.mkeyMgmtItem.setOnSwitchListener(new SwitcherItem.OnSwitchListener() {
             public boolean onSwitchTo(int index) {
                 mKeyMgmtValue = index;
-                refreshView();
+                setUpHotspotUI();
                 return true;
             }
         });
-
+        this.mkeyMgmtItem.setNextFocusUpId(R.id.hotspot_ssid);
 
         this.mSsid = (EditText)mContentView.findViewById(R.id.hotspot_ssid);
         this.mPasswd = (EditText)mContentView.findViewById(R.id.hotspot_passwd);
@@ -118,7 +118,7 @@ public class HotspotView extends BaseView implements View.OnClickListener {
         this.mCancelBtn.setOnClickListener(this);
 
         initViewValue();
-        refreshView();
+        setUpHotspotUI();
         initFocus();
     }
 
@@ -148,7 +148,7 @@ public class HotspotView extends BaseView implements View.OnClickListener {
         this.mFrequencyValue = FREQUENCY_2_4_INDEX;
     }
 
-    private void refreshView(){
+    private void setUpHotspotUI(){
         this.mOpenItem.setCurrentIndex(this.mOpenValue);
         this.mSsid.setText(this.mSSIDValue);
         this.mkeyMgmtItem.setCurrentIndex(this.mKeyMgmtValue);

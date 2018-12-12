@@ -196,7 +196,7 @@ public class PictureParamView extends BaseView {
 
         this.mColorTemperatureSwitcher = SmallSwitcherItem.createItem(this.mContext, this.mCustomizeCategory);
         this.mColorTemperatureSwitcher.setTitle(R.string.picture_color_temperature);
-        this.mColorTemperatureSwitcher.setArrowVisible(false);
+            this.mColorTemperatureSwitcher.setArrowVisible(false);
         this.mColorTemperatureSwitcher.setOptions(mColorTemperatureOption);
         this.mColorTemperatureSwitcher.setOnSwitchListener(new SwitcherItem.OnSwitchListener() {
             public boolean onSwitchTo(int index) {

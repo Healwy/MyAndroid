@@ -4,12 +4,6 @@ import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
-import android.text.TextUtils;
-
-import java.util.List;
 
 public class TvViewManagerAdapter {
     private Context mContext;
