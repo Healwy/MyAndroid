@@ -64,4 +64,5 @@
     <color name="textcolor_selected">#31a0ff</color>
     <color name="textcolor_unselected">#ffffff</color>
     <color name="seting_item_summary_normal">#66ffffff</color>
+    <color name="menu_item_bg_normal">#aa222427</color>
 </resources>

@@ -96,6 +96,7 @@ public class SoundEffectView extends BaseView {
         this.mSoundTrebleSwitcher = SmallSwitcherItem.createItem(this.mContext, this.mCustomizeCategory);
         this.mSoundTrebleSwitcher.setTitle(R.string.sound_treble);
         this.mSoundTrebleSwitcher.setRecycle(false);
+        this.mSoundTrebleSwitcher.setRepeated(true);
         this.mSoundTrebleSwitcher.setArrowVisible(false);
         this.mSoundTrebleSwitcher.setOptions(mNormalOption);
         this.mSoundTrebleSwitcher.setOnSwitchListener(new SwitcherItem.OnSwitchListener() {
@@ -114,6 +115,7 @@ public class SoundEffectView extends BaseView {
         this.mSoundBassSwitcher = SmallSwitcherItem.createItem(this.mContext, this.mCustomizeCategory);
         this.mSoundBassSwitcher.setTitle(R.string.sound_bass);
         this.mSoundBassSwitcher.setRecycle(false);
+        this.mSoundBassSwitcher.setRepeated(true);
         this.mSoundBassSwitcher.setArrowVisible(false);
         this.mSoundBassSwitcher.setOptions(mNormalOption);
         this.mSoundBassSwitcher.setOnSwitchListener(new SwitcherItem.OnSwitchListener() {
@@ -149,6 +151,7 @@ public class SoundEffectView extends BaseView {
         this.mBalanceSwitcher = SmallSwitcherItem.createItem(this.mContext, this.mCustomizeCategory);
         this.mBalanceSwitcher.setTitle(R.string.sound_balance);
         this.mBalanceSwitcher.setRecycle(false);
+        this.mBalanceSwitcher.setRepeated(true);
         this.mBalanceSwitcher.setArrowVisible(false);
         this.mBalanceSwitcher.setOptions(mNormalOption);
         this.mBalanceSwitcher.setOnSwitchListener(new SwitcherItem.OnSwitchListener() {

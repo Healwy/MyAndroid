@@ -79,6 +79,16 @@ public class SettingItem extends RelativeLayout implements Selectable {
     protected void onFinishInflate() {
         super.onFinishInflate();
         this.bgView = (ImageView) findViewById(R.id.bg);
+        this.setOnFocusChangeListener(new OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(hasFocus){
+                    onSelecterEnter();
+                }else {
+                    onSelectorLeave();
+                }
+            }
+        });
     }
 
     protected void onAttachedToWindow() {

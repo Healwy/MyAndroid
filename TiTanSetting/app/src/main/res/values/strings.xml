@@ -59,10 +59,23 @@
     <string name="network_hotspot_keymgmt">安全性</string>
     <string name="network_hotspot_ssid">网络名称</string>
     <string name="network_hotspot_passwd">密码</string>
-    <string name="network_wired_settings">有线网络</string>
+    <string name="network_ethernet_title">有线网络</string>
     <string name="network_wireless_title">无线网络</string>
     <string name="network_bluetooth">蓝牙</string>
     <string name="network_pppoe">PPPOE</string>
     <string name="network_sim_4g">4G</string>
+    <string name="wired_conn_setting">手动设置</string>
+    <string name="net_ip_title">IP地址</string>
+    <string name="net_subnet_title">子网掩码</string>
+    <string name="net_gateway_title">默认网关</string>
+    <string name="net_dns_title">DNS服务器</string>
+    <string name="ethernet_static_null">静态IP设置不能为空</string>
+    <string name="ethernet_static_error">静态IP格式错误</string>
+    <string name="ethernet_save_success">保存成功</string>
+    <string name="wireless_switch_title">无线网络连接</string>
+    <string name="network_wps">通过WPS连接</string>
+    <string name="wifi_state_add">添加网络</string>
+    <string name="wifi_list_summary">(%1$s)</string>
+    <string name="wireless_title">无线网络</string>
 
 </resources>

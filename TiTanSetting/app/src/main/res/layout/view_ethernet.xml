@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_title" />
+
+    <LinearLayout
+        android:layout_width="@dimen/wifi_menu_width"
+        android:layout_height="@dimen/main_setting_height"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/wifi_setting_pad"
+                android:paddingRight="@dimen/wifi_setting_pad">
+
+                <LinearLayout
+                    android:id="@+id/manual_con_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/wifi_option_height"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@drawable/tv_common_list_mid"
+                    android:layout_marginTop="@dimen/common_divid_line">
+
+                    <TextView
+                        android:id="@+id/net_ip_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true" 
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/wifi_text_marginLeft"
+                        android:gravity="left"
+                        android:text="@string/net_ip_title"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="@dimen/common_text_size" />
+
+                    <com.titan.settings.widgets.ShowKeyBoardEditText
+                        android:id="@+id/net_ip_cnt"
+                        android:layout_width="@dimen/wifi_setting_value_width"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true" 
+                        android:layout_marginRight="@dimen/wifi_text_marginRight"
+                        android:padding="@dimen/ethernet_edit_text_padding"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="@dimen/common_text_size" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/wifi_option_height"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@drawable/tv_common_list_mid"
+                    android:layout_marginTop="@dimen/common_divid_line">
+
+                    <TextView
+                        android:id="@+id/net_subnet_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true" 
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/wifi_text_marginLeft"
+                        android:text="@string/net_subnet_title"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="@dimen/common_text_size" />
+
+                    <com.titan.settings.widgets.ShowKeyBoardEditText
+                        android:id="@+id/net_subnet_cnt"
+                        android:layout_width="@dimen/wifi_setting_value_width"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" 
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/wifi_text_marginRight"
+                        android:padding="@dimen/ethernet_edit_text_padding"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="@dimen/common_text_size" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/wifi_option_height"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@drawable/tv_common_list_mid"
+                    android:layout_marginTop="@dimen/common_divid_line">
+
+                    <TextView
+                        android:id="@+id/net_gateway_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true" 
+                        android:layout_marginLeft="@dimen/wifi_text_marginLeft"
+                        android:gravity="left"
+                        android:layout_centerVertical="true"
+                        android:text="@string/net_gateway_title"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="@dimen/common_text_size" />
+
+                    <com.titan.settings.widgets.ShowKeyBoardEditText
+                        android:id="@+id/net_gateway_cnt"
+                        android:layout_width="@dimen/wifi_setting_value_width"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true" 
+                        android:layout_marginRight="@dimen/wifi_text_marginRight"
+                        android:padding="@dimen/ethernet_edit_text_padding"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="@dimen/common_text_size" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/wifi_option_height"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@drawable/tv_common_list_mid"
+                    android:layout_marginTop="@dimen/common_divid_line">
+
+                    <TextView
+                        android:id="@+id/net_dns_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true" 
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/wifi_text_marginLeft" 
+                        android:gravity="left"
+                        android:text="@string/net_dns_title"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="@dimen/common_text_size" />
+
+                    <com.titan.settings.widgets.ShowKeyBoardEditText
+                        android:id="@+id/net_dns_cnt"
+                        android:layout_width="@dimen/wifi_setting_value_width"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true" 
+                        android:layout_marginRight="@dimen/wifi_text_marginRight"
+                        android:padding="@dimen/ethernet_edit_text_padding"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="@dimen/common_text_size" />
+
+                </RelativeLayout>
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/wifi_btn_width"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <com.titan.settings.widgets.TvButton
+                        android:id="@+id/wired_conn"
+                        android:layout_width="@dimen/wifi_btn_width"
+                        android:layout_height="@dimen/wifi_btn_height"
+                        android:text="@string/save"
+                        android:textSize="@dimen/common_text_size_80" 
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/wifi_btn_marginLeft"/>
+
+                    <com.titan.settings.widgets.TvButton
+                        android:id="@+id/wired_cancel"
+                        android:layout_width="@dimen/wifi_btn_width"
+                        android:layout_height="@dimen/wifi_btn_height"
+                        android:text="@string/cancel"
+                        android:textSize="@dimen/common_text_size_80" 
+                        android:layout_alignParentRight="true" 
+                        android:layout_marginRight="@dimen/wifi_btn_marginRight"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

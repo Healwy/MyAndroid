@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wifi_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/wifi_list_item_height"
+    android:background="@drawable/menu_item_selector"
+    android:focusable="true"
+    android:layout_marginRight="-1dp"
+    android:paddingLeft="@dimen/wifi_list_item_left_pad"
+    android:paddingRight="@dimen/wifi_list_item_right_pad"
+    style="@style/setting_item_style">
+
+
+        <ImageView
+            android:id="@+id/wifi_item_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/wifi_list_item_lock_right_pad"
+            android:src="@drawable/icon_wifi_lock"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/wifi_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/wifi_item_lock"
+            android:gravity="center"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/common_text_size" />
+
+        <TextView
+            android:id="@+id/wifi_item_summery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/wifi_list_item_lock_right_pad"
+            android:layout_toRightOf="@id/wifi_item_title"
+            android:textColor="@color/common_text_color_30"
+            android:textSize="@dimen/common_text_size"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/wifi_item_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/wifi_list_item_singal_left_pad"
+                android:src="@drawable/icon_connected"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/wifi_item_single"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wifi_signal_0" />
+        </LinearLayout>
+
+</RelativeLayout>

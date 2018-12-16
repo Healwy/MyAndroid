@@ -6,8 +6,8 @@
     </string-array>
 
     <string-array name="setting_deny_allow_list">
-        <item>允许</item>
         <item>拒绝</item>
+        <item>允许</item>
     </string-array>
 
     <string-array name="general_screensaver_timeout_list">

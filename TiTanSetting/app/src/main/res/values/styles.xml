@@ -5,4 +5,12 @@
         <item name="android:stateListAnimator">@anim/tv_settingitem_scale</item>
     </style>
 
+    <style name="tv_pinned_recycler_view">
+        <item name="android:layout_width">@dimen/list_view_pinned_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/list_view_pinned_margin</item>
+        <item name="android:layout_marginRight">@dimen/list_view_pinned_margin</item>
+        <item name="android:layout_marginTop">@dimen/list_item_space</item>
+    </style>
+
 </resources>

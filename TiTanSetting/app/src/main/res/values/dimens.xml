@@ -51,7 +51,7 @@
     <dimen name="system_btn_marginLeft">100.0dp</dimen>
     <dimen name="system_btn_marginRight">100.0dp</dimen>
     <dimen name="wifi_option_height">42dp</dimen>
-    <dimen name="wifi_text_marginLeft" >20.0dp</dimen>
+    <dimen name="wifi_text_marginLeft">20.0dp</dimen>
     <dimen name="common_text_size">16dp</dimen>
     <dimen name="wifi_btn_width">155dp</dimen>
     <dimen name="wifi_btn_height">60dp</dimen>
@@ -62,4 +62,19 @@
     <dimen name="wifi_setting_value_width">150.0dp</dimen>
     <dimen name="wifi_text_marginRight">20.0dp</dimen>
     <dimen name="ethernet_edit_text_padding">3.0dp</dimen>
+    <dimen name="wifi_list_item_height">47.0dp</dimen>
+    <dimen name="list_pinned_item_padding">7.5dp</dimen>
+    <dimen name="wifi_key_width">128.0dp</dimen>
+    <dimen name="wifi_square_height">30.5dp</dimen>
+    <dimen name="wifi_square_width">116.0dp</dimen>
+    <dimen name="wifi_square_margin">13.0dp</dimen>
+    <dimen name="wifi_list_item_left_pad">14.5dp</dimen>
+    <dimen name="wifi_list_item_right_pad">28.0dp</dimen>
+    <dimen name="wifi_list_item_lock_right_pad">10.0dp</dimen>
+    <dimen name="wifi_list_item_singal_left_pad">11.0dp</dimen>
+    <dimen name="list_view_pinned_margin">24.5dp</dimen>
+    <dimen name="wifi_list_marginBottom">8.0dp</dimen>
+    <dimen name="list_view_pinned_width">527.0dp</dimen>
+    <dimen name="list_item_space">1.0dp</dimen>
+
 </resources>

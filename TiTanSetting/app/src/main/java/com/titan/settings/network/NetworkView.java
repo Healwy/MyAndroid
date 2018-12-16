@@ -8,7 +8,9 @@ import android.widget.TextView;
 import com.titan.platformadapter.TvItemList;
 import com.titan.settings.R;
 import com.titan.settings.base.BaseView;
+import com.titan.settings.network.ethernet.EthernetView;
 import com.titan.settings.network.hotspot.HotspotView;
+import com.titan.settings.network.wireless.WirelessView;
 import com.titan.settings.widgets.SettingCategory;
 import com.titan.settings.widgets.SettingItem;
 import com.titan.settings.widgets.SwitcherItem;
@@ -69,12 +71,12 @@ public class NetworkView extends BaseView {
         switch (index) {
             case TvItemList.TvNetworkItem.ITEM_WIRED_CONNECT:
                 this.mWiredConnectItem = SettingItem.createItem(group);
-                this.mWiredConnectItem.setTitle(R.string.network_wired_settings);
+                this.mWiredConnectItem.setTitle(R.string.network_ethernet_title);
                 this.mWiredConnectItem.setRightArrowVisibility(VISIBLE);
                 this.mWiredConnectItem.setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        // startView(new EthernetView(mApp));
+                         startView(new EthernetView(mApp));
                         mClickedItem = mWiredConnectItem;
                     }
                 });
@@ -86,7 +88,7 @@ public class NetworkView extends BaseView {
                 this.mWirelessConnectItem.setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        //startView(new WirelessView(mApp));
+                        startView(new WirelessView(mApp));
                         mClickedItem = mWirelessConnectItem;
                     }
                 });

@@ -128,16 +128,7 @@ public class SwitcherItem extends SettingItem implements Selectable {
                 }
             }
         });
-        this.setOnFocusChangeListener(new OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if(hasFocus){
-                    onSelecterEnter();
-                }else {
-                    onSelectorLeave();
-                }
-            }
-        });
+
     }
 
     public void setEnterShow(boolean show) {
