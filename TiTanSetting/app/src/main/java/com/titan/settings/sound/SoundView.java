@@ -5,7 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.titan.platformadapter.TvItemList;
+import com.titan.platform.adapter.TvItemList;
 import com.titan.settings.R;
 import com.titan.settings.base.BaseView;
 import com.titan.settings.widgets.SettingCategory;
@@ -52,7 +52,7 @@ public class SoundView extends BaseView {
         this.mContentHolder = (ViewGroup) findViewById(R.id.scrollContentHolder);
         this.mSoundCategory = SettingCategory.createNewCategory(this.mContentHolder);
         this.mSoundCategory.setTitle(getResources().getString(R.string.sound_system_sound));
-        getViews(this.mSoundCategory, TvItemList.TvSoundItem.pictureCategoryList);
+        getViews(this.mSoundCategory, TvItemList.TvSoundItem.getSoundCategoryList());
     }
 
     private void getViews(SettingCategory category, int[] list) {

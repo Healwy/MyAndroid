@@ -77,5 +77,8 @@
     <string name="wifi_state_add">添加网络</string>
     <string name="wifi_list_summary">(%1$s)</string>
     <string name="wireless_title">无线网络</string>
+    <string name="general_screensaver">屏保</string>
+    <string name="general_screensaver_style">屏保样式</string>
+    <string name="general_screensaver_color">万花筒</string>
 
 </resources>

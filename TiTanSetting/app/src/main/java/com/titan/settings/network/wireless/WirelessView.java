@@ -9,7 +9,8 @@ import com.titan.settings.R;
 import com.titan.settings.base.BaseView;
 import com.titan.settings.utils.LogUtils;
 
-import android.net.wifi.WifiManager;
+// TODO 2018.12.17 临时注释
+//import android.net.wifi.WifiManager;
 //import android.net.wifi.WifiManager.ActionListener;
 
 public class WirelessView  extends BaseView {
@@ -18,6 +19,7 @@ public class WirelessView  extends BaseView {
     private TextView mTitleFirst;
     private LinearLayout mWifiConLayout;
     private HandlerThread mBgThread;
+    // TODO 2018.12.17 临时注释
 //    private ActionListener mConnectListener;
 
     public WirelessView(Application app) {
@@ -37,7 +39,7 @@ public class WirelessView  extends BaseView {
 
         mBgThread = new HandlerThread(TAG, android.os.Process.THREAD_PRIORITY_BACKGROUND);
         mBgThread.start();
-
+// TODO 2018.12.17 临时注释
 //        mConnectListener = new ActionListener() {
 //            @Override
 //            public void onSuccess() {

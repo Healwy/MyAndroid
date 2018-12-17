@@ -13,7 +13,7 @@ import com.titan.settings.widgets.SmallSettingItem;
 import com.titan.settings.widgets.SmallSwitcherItem;
 import com.titan.settings.widgets.SwitcherItem;
 
-import static com.titan.platformadapter.TvPictureManagerAdapter.PICTURE_MODE_USER;
+import static com.titan.platform.adapter.TvPictureManagerAdapter.PICTURE_MODE_USER;
 
 public class PictureParamView extends BaseView {
 

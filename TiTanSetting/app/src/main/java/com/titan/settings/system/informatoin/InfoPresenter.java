@@ -4,15 +4,13 @@ import android.app.ActivityManager;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Environment;
 import android.os.StatFs;
 
-import com.titan.platformadapter.TvStrAdapter;
+import com.titan.platform.adapter.TvStrAdapter;
 import com.titan.settings.R;
 import com.titan.settings.base.BaseModel;
 import com.titan.settings.model.SystemInfoModel;
-import com.titan.settings.utils.LogUtils;
 import com.titan.settings.utils.MacUtil;
 
 import java.io.File;
@@ -126,8 +124,8 @@ public class InfoPresenter implements IInfoContract.Presenter {
             packageInfo = packageManager.getPackageInfo(mContext.getPackageName(), 0);
             if (packageInfo != null) {
                 versionName = packageInfo.versionName;
-                //TODO 临时注释
-                //buildTime = SystemProperties.get("ro.build.date", "Unknown");
+                //TODO 2018.12.17 临时注释
+//                buildTime = SystemProperties.get("ro.build.date", "Unknown");
             }
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();

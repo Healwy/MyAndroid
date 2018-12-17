@@ -19,6 +19,15 @@
         <item>12分钟</item>
     </string-array>
 
+    <string-array name="general_screensaver_timeout_entry">
+        <item>2147483647</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>240000</item>
+        <item>480000</item>
+        <item>720000</item>
+    </string-array>
+
     <string-array name="setting_picture_mode">
         <item>自定义</item>
         <item>标准</item>

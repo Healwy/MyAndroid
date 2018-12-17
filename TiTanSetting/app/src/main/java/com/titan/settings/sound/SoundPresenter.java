@@ -4,13 +4,13 @@ import android.content.Context;
 import android.media.AudioManager;
 import android.provider.Settings;
 
-import com.titan.platformadapter.TvAudioManagerAdapter;
+import com.titan.platform.adapter.TvAudioManagerAdapter;
 
-import static com.titan.platformadapter.TvAudioManagerAdapter.DEFAULT_BALANCE;
-import static com.titan.platformadapter.TvAudioManagerAdapter.DEFAULT_BASS;
-import static com.titan.platformadapter.TvAudioManagerAdapter.DEFAULT_SOUNDMODE;
-import static com.titan.platformadapter.TvAudioManagerAdapter.DEFAULT_SURROUND;
-import static com.titan.platformadapter.TvAudioManagerAdapter.DEFAULT_TREBLE;
+import static com.titan.platform.adapter.TvAudioManagerAdapter.DEFAULT_BALANCE;
+import static com.titan.platform.adapter.TvAudioManagerAdapter.DEFAULT_BASS;
+import static com.titan.platform.adapter.TvAudioManagerAdapter.DEFAULT_SOUNDMODE;
+import static com.titan.platform.adapter.TvAudioManagerAdapter.DEFAULT_SURROUND;
+import static com.titan.platform.adapter.TvAudioManagerAdapter.DEFAULT_TREBLE;
 
 public class SoundPresenter implements ISoundContract.Presenter {
 

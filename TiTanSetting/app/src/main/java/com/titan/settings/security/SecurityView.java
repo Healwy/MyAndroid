@@ -4,7 +4,7 @@ import android.app.Application;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.titan.platformadapter.TvItemList;
+import com.titan.platform.adapter.TvItemList;
 import com.titan.settings.R;
 import com.titan.settings.base.BaseView;
 import com.titan.settings.widgets.SettingCategory;
@@ -52,7 +52,7 @@ public class SecurityView extends BaseView {
         this.mContentHolder = (ViewGroup) findViewById(R.id.scrollContentHolder);
         this.mSecurityCategory = SettingCategory.createNewCategory(this.mContentHolder);
         this.mSecurityCategory.setTitle(getResources().getString(R.string.main_security));
-        getViews(this.mSecurityCategory, TvItemList.TvSecurityItem.securityCategoryList);
+        getViews(this.mSecurityCategory, TvItemList.TvSecurityItem.getSecurityCategoryList());
     }
 
     private void getViews(SettingCategory category, int[] list) {

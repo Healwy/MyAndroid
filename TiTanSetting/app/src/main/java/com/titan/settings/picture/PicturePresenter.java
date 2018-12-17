@@ -3,15 +3,15 @@ package com.titan.settings.picture;
 import android.content.ContentResolver;
 import android.content.Context;
 
-import com.titan.platformadapter.TvPictureManagerAdapter;
+import com.titan.platform.adapter.TvPictureManagerAdapter;
 
-import static com.titan.platformadapter.TvPictureManagerAdapter.DEFAULT_BRIGHTNESS;
-import static com.titan.platformadapter.TvPictureManagerAdapter.DEFAULT_COLORTEMPERATURE;
-import static com.titan.platformadapter.TvPictureManagerAdapter.DEFAULT_CONTRAST;
-import static com.titan.platformadapter.TvPictureManagerAdapter.DEFAULT_HUE;
-import static com.titan.platformadapter.TvPictureManagerAdapter.DEFAULT_PICTUREMODE;
-import static com.titan.platformadapter.TvPictureManagerAdapter.DEFAULT_SATURATION;
-import static com.titan.platformadapter.TvPictureManagerAdapter.DEFAULT_SHARPNESS;
+import static com.titan.platform.adapter.TvPictureManagerAdapter.DEFAULT_BRIGHTNESS;
+import static com.titan.platform.adapter.TvPictureManagerAdapter.DEFAULT_COLORTEMPERATURE;
+import static com.titan.platform.adapter.TvPictureManagerAdapter.DEFAULT_CONTRAST;
+import static com.titan.platform.adapter.TvPictureManagerAdapter.DEFAULT_HUE;
+import static com.titan.platform.adapter.TvPictureManagerAdapter.DEFAULT_PICTUREMODE;
+import static com.titan.platform.adapter.TvPictureManagerAdapter.DEFAULT_SATURATION;
+import static com.titan.platform.adapter.TvPictureManagerAdapter.DEFAULT_SHARPNESS;
 
 public class PicturePresenter implements IPictureContract.Presenter {
 

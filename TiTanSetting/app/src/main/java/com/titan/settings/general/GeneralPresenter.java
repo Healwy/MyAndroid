@@ -5,6 +5,8 @@ import android.content.Context;
 import android.media.AudioManager;
 import android.provider.Settings;
 
+import com.titan.settings.general.daydream.DreamBackend;
+
 import java.util.Locale;
 
 //TODO 2018.12.6 临时注释
@@ -15,11 +17,13 @@ public class GeneralPresenter implements IGeneralContract.Presenter {
     private final Context mContext;
     private final ContentResolver mResolver;
     private final AudioManager mAudioManager;
+    private DreamBackend mDreamBackend;
 
     public GeneralPresenter(Context context) {
         mContext = context;
         mResolver = context.getContentResolver();
         mAudioManager = (AudioManager) mContext.getSystemService(Context.AUDIO_SERVICE);
+        this.mDreamBackend = new DreamBackend(mContext);
     }
 
     @Override
@@ -49,5 +53,19 @@ public class GeneralPresenter implements IGeneralContract.Presenter {
     public String getDefaultIME() {
         String defIME = Settings.Secure.getString(mResolver, Settings.Secure.DEFAULT_INPUT_METHOD);
         return defIME;
+    }
+
+    @Override
+    public void setScreenSaverTimeout(long l) {
+        if (!mDreamBackend.isEnabled()) {
+            mDreamBackend.setEnabled(true);
+        }
+        mDreamBackend.setDefaultDream();
+        mDreamBackend.setScreenSaverTimeout(l);
+    }
+
+    @Override
+    public long getScreenSaverTimeout() {
+        return mDreamBackend.getScreenSaverTimeout();
     }
 }

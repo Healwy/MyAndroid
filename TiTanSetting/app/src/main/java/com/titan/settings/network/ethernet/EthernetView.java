@@ -198,7 +198,7 @@ public class EthernetView extends BaseView implements View.OnClickListener, Ethe
             if (networkPrefixLength < 0 || networkPrefixLength > 32) {
                 return 3;
             }
-            //TODO 临时注释
+            /// TODO 2018.12.17 临时注释
 //            staticIpConfiguration.ipAddress = new LinkAddress(inetAddr, networkPrefixLength);
         } catch (NumberFormatException e) {
             // Set the hint as default after user types in ip address
@@ -264,7 +264,7 @@ public class EthernetView extends BaseView implements View.OnClickListener, Ethe
 
     @Override
     protected void initData() {
-        //TODO 临时注释
+        // TODO 2018.12.17 临时注释
 //        mEthernetManager = (EthernetManager) mContext.getSystemService(Context.ETHERNET_SERVICE);
         mConnManager = (ConnectivityManager) mContext.getSystemService(Context.CONNECTIVITY_SERVICE);
         if (mEthernetManager != null) {
@@ -320,7 +320,7 @@ public class EthernetView extends BaseView implements View.OnClickListener, Ethe
     }
 
     private void updateUI() {
-        //TODO 临时注释
+        // TODO 2018.12.17 临时注释
 //        IpConfiguration ipinfo = mEthernetManager.getConfiguration();
 //        if (isEthernetAvailable && ipinfo != null) {
 //            mIpAssignment = ipinfo.getIpAssignment();
@@ -424,7 +424,7 @@ public class EthernetView extends BaseView implements View.OnClickListener, Ethe
     private String formatIpAddresses(LinkProperties prop) {
         if (prop == null) return null;
         Iterator<InetAddress> iter = null;
-        //TODO 临时注释
+        // TODO 2018.12.17 临时注释
 //        iter = prop.getAllAddresses().iterator();
 
         if (!iter.hasNext()) return null;
@@ -495,7 +495,7 @@ public class EthernetView extends BaseView implements View.OnClickListener, Ethe
 
     private String formatGateway(LinkProperties prop) {
         String gateway = "";
-        //TODO 临时注释
+        // TODO 2018.12.17 临时注释
 //        if (prop == null) return null;
 //        Iterator<RouteInfo> iter = prop.getAllRoutes().iterator();
 //        if (!iter.hasNext()) return null;

@@ -3,7 +3,7 @@ package com.titan.settings.system.reset;
 import android.content.Context;
 import android.os.AsyncTask;
 
-import com.titan.platformadapter.TvRestManagerAdapter;
+import com.titan.platform.adapter.TvRestManagerAdapter;
 
 public class ResetPresenter implements IResetContract.Presenter {
     private IResetContract.View mView;

@@ -5,7 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.titan.platformadapter.TvItemList;
+import com.titan.platform.adapter.TvItemList;
 import com.titan.settings.R;
 import com.titan.settings.base.BaseView;
 import com.titan.settings.widgets.SettingCategory;
@@ -53,7 +53,7 @@ public class PictureView extends BaseView {
         this.mContentHolder = (ViewGroup) mContentView.findViewById(R.id.scrollContentHolder);
         this.mPictureCategory = SettingCategory.createNewCategory(this.mContentHolder);
         this.mPictureCategory.setTitle(getResources().getString(R.string.main_picture));
-        getViews(this.mPictureCategory, TvItemList.TvPictureItem.pictureCategoryList);
+        getViews(this.mPictureCategory, TvItemList.TvPictureItem.getPictureCategoryList());
     }
 
     private void getViews(SettingCategory category, int[] list) {

@@ -11,5 +11,10 @@ public interface IGeneralContract  {
         void setDefaultIME(String value);
 
         String getDefaultIME();
+
+        void setScreenSaverTimeout(long l);
+
+        long getScreenSaverTimeout();
     }
 }
+

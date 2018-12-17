@@ -5,7 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.titan.platformadapter.TvItemList;
+import com.titan.platform.adapter.TvItemList;
 import com.titan.settings.R;
 import com.titan.settings.base.BaseView;
 import com.titan.settings.network.ethernet.EthernetView;
@@ -56,7 +56,7 @@ public class NetworkView extends BaseView {
         this.mContentHolder = (ViewGroup) mContentView.findViewById(R.id.scrollContentHolder);
         this.mNetworkCategory = SettingCategory.createNewCategory(this.mContentHolder);
         this.mNetworkCategory.setTitle(getResources().getString(R.string.main_network));
-        getViews(this.mNetworkCategory, TvItemList.TvNetworkItem.networkCategoryList);
+        getViews(this.mNetworkCategory, TvItemList.TvNetworkItem.getNetworkCategoryList());
     }
 
     private void getViews(SettingCategory category, int[] list) {

@@ -1,7 +1,6 @@
 package com.titan.settings.sound;
 
 import android.app.Application;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
@@ -14,7 +13,7 @@ import com.titan.settings.widgets.SmallSettingItem;
 import com.titan.settings.widgets.SmallSwitcherItem;
 import com.titan.settings.widgets.SwitcherItem;
 
-import static com.titan.platformadapter.TvAudioManagerAdapter.SOUND_MODE_USER;
+import static com.titan.platform.adapter.TvAudioManagerAdapter.SOUND_MODE_USER;
 
 public class SoundEffectView extends BaseView {
 

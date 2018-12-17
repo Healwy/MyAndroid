@@ -1,4 +1,4 @@
-package com.titan.platformadapter;
+package com.titan.platform.adapter;
 
 import android.content.Context;
 

@@ -1,15 +1,12 @@
 package com.titan.settings.system;
 
 import android.app.Application;
-import android.content.ActivityNotFoundException;
-import android.content.ComponentName;
-import android.content.Intent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.titan.platformadapter.TvItemList;
-import com.titan.platformadapter.TvViewManagerAdapter;
+import com.titan.platform.adapter.TvItemList;
+import com.titan.platform.adapter.TvViewManagerAdapter;
 import com.titan.settings.R;
 import com.titan.settings.base.BaseView;
 import com.titan.settings.system.informatoin.InfoView;
@@ -53,7 +50,7 @@ public class SystemView extends BaseView {
         this.mContentHolder = (ViewGroup) mContentView.findViewById(R.id.scrollContentHolder);
         this.mSystemCategory = SettingCategory.createNewCategory(this.mContentHolder);
         this.mSystemCategory.setTitle(getResources().getString(R.string.main_system));
-        getViews(this.mSystemCategory, TvItemList.TvSystemItem.systemCategoryList);
+        getViews(this.mSystemCategory, TvItemList.TvSystemItem.getSystemCategoryList());
     }
 
     private void getViews(SettingCategory category, int[] list) {

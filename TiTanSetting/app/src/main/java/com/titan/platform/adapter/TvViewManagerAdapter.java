@@ -1,4 +1,4 @@
-package com.titan.platformadapter;
+package com.titan.platform.adapter;
 
 import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
@@ -48,4 +48,5 @@ public class TvViewManagerAdapter {
             e.printStackTrace();
         }
     }
+
 }
